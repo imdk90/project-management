@@ -1,4 +1,4 @@
-package com.enterpreneur.projectmgmt.entity;
+package com.nhsbsa.projmgmt.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

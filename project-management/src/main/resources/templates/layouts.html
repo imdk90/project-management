@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:fragment="header">
 <!-- Required meta tags -->
+<head th:fragment="header">
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +11,15 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
+
+<link rel="stylesheet" th:href="@{/css/formatting.css}">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <nav th:fragment="navbar"
@@ -20,13 +29,14 @@
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
 			aria-label="Toggle navigation"></button>
+
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item"><a class="nav-link active" href="/">Home</a>
-				</li>
-				<li class="nav-item"><a class="nav-link" href="/projects/create">Project</a></li>
-				<li class="nav-item"><a class="nav-link" href="/employees/create">Employee</a>
-				</li>
+				<!-- <li class="nav-item"><a class="nav-link active" th:href="@{/}">Home</a>
+				</li> -->
+				<li class="nav-item"><a class="nav-link" th:href="@{/projects}">Projects</a></li>
+				<li class="nav-item"><a class="nav-link"
+					th:href="@{/employees}">Employees</a></li>
 			</ul>
 		</div>
 	</div>

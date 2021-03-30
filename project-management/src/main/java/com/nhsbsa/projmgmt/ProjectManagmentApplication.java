@@ -1,4 +1,4 @@
-package com.enterpreneur.projectmgmt;
+package com.nhsbsa.projmgmt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class ProjectManagmentApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectManagmentApplication.class, args);
 	}
-
 }
